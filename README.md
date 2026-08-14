@@ -16,6 +16,10 @@
 
 ### 🏠 [Homepage](https://github.com/shortthirdman/MultiAgent-Trading-ResearchSystem)
 
+- [Part 1](https://ai.gopubby.com/building-a-multi-agent-trading-research-system-with-langchain-deep-agents-part-1-eb254ac6c699)
+
+- [Part 2](https://ai.gopubby.com/building-a-multi-agent-trading-research-system-with-langchain-deep-agents-part-2-0b2653730f7e)
+
 ### ✨ [Demo](https://github.com/shortthirdman/MultiAgent-Trading-ResearchSystem)
 
 ## Install
