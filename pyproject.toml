@@ -1,0 +1,55 @@
+[project]
+name = "multi-agent-trading-research"
+version = "0.1.0"
+description = "Multi-Agent Trading Research System with LangChain Deep Agents"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "altair>=6.2.2",
+    "httpx>=0.28.1",
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.2",
+    "pandas>=3.0.5",
+    "plotly>=6.9.0",
+    "pydantic>=2.13.4",
+    "pydantic-settings>=2.15.0",
+    "python-dotenv>=1.2.2",
+    "requests>=2.34.2",
+    "streamlit>=1.61.1",
+    "yfinance>=1.6.0",
+]
+[tool.ruff]
+target-version = "py313"
+line-length = 88
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "I",
+    "B",
+    "UP",
+    "SIM",
+    "RUF",
+]
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["S101"]
+
+##[tool.ruff.lint.isort]
+##known-first-party = ["billing"]
+
+[tool.basedpyright]
+pythonVersion = "3.12"
+typeCheckingMode = "standard"
+reportUnknownParameterType = true
+reportUnknownMemberType = true
+reportUnknownVariableType = true
+reportAny = false
+
+[tool.coverage.run]
+branch = true
+dynamic_context = "test_function"
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
